@@ -47,4 +47,20 @@ player1Scoreboard.textContent = player1Score
  player1Turn = !player1Turn
 })
 
+resetBtn.addEventListener("click",function()
+{
+
+    rollBtn.style.display = "block"
+    resetBtn.style.display = "none"
+    message.textContent = "Player 1 Turn"
+    player1Scoreboard.textContent = 0
+    player2Scoreboard.textContent = 0
+    player1Dice.textContent = '-'
+    player2Dice.textContent = '-'
+    player1Score = 0
+    player2Score = 0
+    player1Turn = true
+    
+
+})
 
